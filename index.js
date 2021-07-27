@@ -1,21 +1,17 @@
 // Code your solutions in this file
-let people = ["Ada", "Brendan", "Ali"];
-let event = "birthday";
-let cards = []
-
-function writeCards(people, event) {
-    for (let i = 0; i < people.length; i++ ) {
-        cards.push(`Thank you, ${people[i]}, for the wonderful ${event} gift!`);
+let reply = []
+const writeCards = (array, name) => {
+    for (let i=0; i < array.length; i++) {
+        reply.push(`Thank you, ${array[i]}, for the wonderful ${name} gift!`)
     }
-    return cards;
-}                    
-
-// could we solve this with slice()?
-
-function countDown(posNumber) {
-    
-     while (posNumber > -1) {
-        console.log(posNumber);
-        posNumber--;
-     }
+    return reply
 }
+writeCards()
+
+function countDown(i) {
+    while (i >= 0) {
+        console.log(i); 
+        i--
+    }
+}
+
